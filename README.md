@@ -1,4 +1,4 @@
-Pinegrow960Grid
+960 Grid plugin for Pinegrow Web Designer
 ===============
 
 Pinegrow plugin for 960 Grid.
