@@ -20,7 +20,6 @@ $(function() {
 
         //Tell Pinegrow about the framework
         pinegrow.addFramework(f);
-        console.log('f added');
 
         //Add properties common to all components of this framework
         //Properties are arranged in sections
@@ -53,7 +52,7 @@ $(function() {
         var container = new PgComponentType('960-container', 'Container');
 
         //How can we identify DOM elements that are containers?
-        container.selector = ".container_12,.container_16";
+        container.selector = ".container_12,.container_16,.container_24";
 
         //Html code for container, that will be inserted into the page
         container.code = '<div class="container_12"></div>';
@@ -61,7 +60,7 @@ $(function() {
         //Set empty_placeholder to true so that empty container gets min-height set. Otherwise empty container would be invisible. This lets us see it and use it as drop target. Placeholder style gets removed as soon as we add something to this element.
         container.empty_placeholder = true;
 
-        //Highlight element in the tree to show it is important and has special features
+        //Highlight element in the tree to show it is important and has special features. This will just paint it orange.
         container.tags = 'major';
 
         //Here comes the interesting part: defining property sections and fields, shown in PROP tab when the element is selected
@@ -91,7 +90,7 @@ $(function() {
 
         //Columns
 
-        //First define options arrays
+        //First define options arrays to save us some typing
         var grid = [];
         var push = [];
         var pull = [];
