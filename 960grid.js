@@ -179,7 +179,7 @@ $(function() {
         f.addComponentType(column);
 
         //Now, lets define sections and elements shown in LIB tab
-        var section = new PgFramewrokLibSection('960grid-layout', 'Layout');
+        var section = new PgFrameworkLibSection('960grid-layout', 'Layout');
         //Pass components in array
         section.setComponentTypes([container, column]);
         f.addLibSection(section);
